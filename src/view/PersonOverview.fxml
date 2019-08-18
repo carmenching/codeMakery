@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PersonOverviewController">
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PersonOverviewController">
   <children>
     <SplitPane dividerPositions="0.3879598662207358" focusTraversable="true" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <items>
@@ -51,8 +51,8 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
             </GridPane>
-            <Button layoutX="229.0" layoutY="263.0" mnemonicParsing="false" text="Edit..." />
-            <Button layoutX="164.0" layoutY="263.0" mnemonicParsing="false" text="New..." />
+            <Button layoutX="229.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleEditPerson" text="Edit..." />
+            <Button layoutX="164.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleNewPerson" text="New..." />
             <Button layoutX="293.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleDeletePerson" text="Delete" />
           </children>
         </AnchorPane>
