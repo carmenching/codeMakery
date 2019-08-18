@@ -21,6 +21,19 @@ public class MainApp extends Application {
     private Stage primaryStage;
     private BorderPane rootLayout;
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    /**
+     * Returns the main stage.
+     * @return
+     */
+
+    public Stage getPrimaryStage() {
+        return primaryStage;
+    }
+
     public MainApp() {
         // Add some sample data
         personData.add(new Person("Hans", "Muster"));
@@ -130,16 +143,4 @@ public class MainApp extends Application {
         }
     }
 
-    /**
-     * Returns the main stage.
-     * @return
-     */
-    public Stage getPrimaryStage() {
-        return primaryStage;
-    }
-
-
-    public static void main(String[] args) {
-        launch(args);
-    }
 }
